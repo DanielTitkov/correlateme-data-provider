@@ -3,11 +3,10 @@ debug: true
 # db: from-env
 # systemUserID: from-env
 metrics:
-  - id: "metric1"
-    name: "dummy1"
+  - id: "0adb52bf-dcb1-4a19-83ed-e8d7778dd3fd"
+    name: "Random from 1 to 10"
     schedule: "0 0 * * *"
-    provider: "provider1"
-  - id: "metric2"
-    name: "dummy2"
-    schedule: "0 */2 * * *"
-    provider: "provider2"
+    provider: "RandomProvider"
+    options:
+      max: 10.0
+      min: 1.0

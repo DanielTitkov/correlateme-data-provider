@@ -19,6 +19,7 @@ type MetricConfig struct {
 	ID       string
 	Schedule string
 	Provider string
+	Options  map[string]interface{}
 }
 
 func ReadConfigs(path string) (Config, error) {
