@@ -1,0 +1,13 @@
+env: live
+debug: true
+# db: from-env
+# systemUserID: from-env
+metrics:
+  - id: "metric1"
+    name: "dummy1"
+    schedule: "0 0 * * *"
+    provider: "provider1"
+  - id: "metric2"
+    name: "dummy2"
+    schedule: "0 */2 * * *"
+    provider: "provider2"

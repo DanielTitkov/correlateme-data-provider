@@ -1,4 +1,4 @@
-run: gen
+run: 
 	go run cmd/provider/main.go
 
 gen:
